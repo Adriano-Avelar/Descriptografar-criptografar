@@ -1,10 +1,10 @@
-Criptografia e Descriptografia de Texto
+<h1>Criptografia e Descriptografia de Texto</h1>
 Este é o repositório do projeto de criptografia e descriptografia de texto desenvolvido em HTML, CSS e JavaScript, conforme ensinado pelo programa da Alura.
 
-Descrição
+<h1>Descrição</h1>
 Este projeto tem como objetivo implementar um aplicativo web simples para criptografar e descriptografar texto usando algoritmos de criptografia básicos. O usuário pode inserir texto plano, selecionar um método de criptografia e visualizar o texto criptografado correspondente. Além disso, o usuário também pode inserir texto criptografado e, usando a mesma chave de criptografia, descriptografar o texto de volta ao texto plano.
 
-Funcionalidades
+<h1>Funcionalidades</h1>
 Criptografia de texto usando algoritmos simples.
 Descriptografia de texto criptografado.
 Interface de usuário simples e intuitiva.
