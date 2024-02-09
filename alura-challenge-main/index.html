@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador De Texto</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js" defer></script>
+  <script src="./js/criptografar.js" defer></script>
+  <script src="./js/descriptografar.js" defer></script>
+</head>
+<header>
+  <img src="./assets/logo_alura.svg" alt="Logo da Alura">
+</header>
+
+<body>
+  <form>
+    <textarea placeholder="Digite seu texto" id="input-cripto-descripto" cols="30" rows="20" autofocus></textarea>
+    <div class="div-form-btns">
+      <div>
+        <img src="./assets/Vector.svg" alt="Alerta">
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div id="div-btns-form">
+        <button id="criptografar" class="criptografar">
+          Criptografar
+        </button>
+        <button id="descriptografar" class="descriptografar">
+          Descriptografar
+        </button>
+      </div>
+    </div>
+  </form>
+  <div class="container-sem-texto-e-copiar">
+    <div class="div-sem-texto">
+      <img src="./assets/High_quality_products.svg" alt="sem-texto">
+      <div>
+        <h3></h3>
+        <p></p>
+      </div>
+
+    </div>
+    <div class="div-copiar hidden">
+      <textarea name="input-copiar" id="input-copiar" cols="30" rows="20" readonly>
+      </textarea>
+      <button id="btn-copiar">
+        Copiar
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

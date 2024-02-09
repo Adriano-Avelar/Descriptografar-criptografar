@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F5FC;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  padding: 4rem 6rem;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #0A3871;
+  height: 6.7rem;
+  width: 32.8rem;
+  border-radius: 2.4rem;
+  padding: 2.4rem;  
+  font-family: 'Inter',sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.click-button {
+  transform: scale(1.01); 
+  box-shadow: 2px 3px 3px rgba(0, 0, 0,0.5);
+}
+
+textarea {
+  all: unset;
+  columns: 20;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 65.0rem;
+  width: 60%;
+  padding-top: 8rem;
+  padding-bottom: 2.5rem;
+
+}
+
+#input-cripto-descripto {
+  width: 50rem;
+  padding-top: 2rem;
+  color:#0a3871;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.div-form-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.div-form-btns div {
+  display: flex;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  gap: 1rem;
+}
+
+.criptografar {
+  background-color: #0A3871;
+  color: white;
+}
+
+.div-copiar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+  height: 65.0rem;
+  width: 40rem;
+  padding-bottom: 2.5rem;
+  border-radius: 3.2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0,0.5);
+}
+
+#input-copiar {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.div-sem-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem;
+  gap: 4rem;
+  height: 65.0rem;
+  width: 40rem;
+  border-radius: 3.2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0,0.5);
+}
+
+.div-sem-texto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 12.2rem;
+  width: 33.6rem;
+  gap: 3rem; 
+}
+
+.div-sem-texto h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.div-sem-texto p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1154px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  #input-cripto-descripto {
+    width: 65rem;
+    margin-top: 5rem;
+  }
+
+  .div-copiar {
+    height: 30rem;
+    width: 70rem;
+    margin-bottom: 3rem;
+  }
+
+  .div-copiar > * {
+    margin-bottom: 3rem;
+    width: 60rem;
+  }
+
+  .div-sem-texto {
+    height: 15rem;
+    width: 70rem;
+    padding: 8rem 1rem;
+  }
+
+  .div-sem-texto img {
+    display: none;
+  }
+
+  .div-sem-texto div {
+    width: 90%;
+  }
+
+  .div-sem-texto h3 {
+    font-size: 2.6rem;
+    line-height: 1.8rem;
+  }
+  
+  .div-sem-texto p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+
+  header {
+    padding: 2rem;
+  }
+
+  #input-cripto-descripto {
+    width: 35rem;
+    font-size: 2.5rem;
+  }
+
+  #div-btns-form {
+    display: block;
+  }
+
+  #div-btns-form > * {
+    margin-top: 2rem;
+    width: 45rem;
+  }
+
+  .div-copiar {
+    height: 40rem;
+    width: 45rem;
+  }
+
+  .div-copiar > * {
+    width: 40rem;
+  }
+
+  .div-sem-texto {
+    height: 20rem;
+    width: 35rem;
+  }
+ 
+  .div-sem-texto h3 {
+    font-size: 2.8rem;
+    line-height: 2.9rem;
+  }
+  
+  .div-sem-texto p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }  
+}
+
+
+@media (max-width: 520px) {
+
+  #input-cripto-descripto {
+    width: 25rem;
+    font-size: 2.5;
+    line-height: 3.1rem;
+  }
+
+  #div-btns-form > * {
+    width: 30rem;
+  }
+
+  .div-copiar {
+    height: 40rem;
+    width: 30rem;
+  }
+
+  .div-copiar > * {
+    padding-left: 3.5rem;
+    width: 25rem;
+  }
+
+  .div-sem-texto {
+    width: 30rem;
+  }
+
+  .div-sem-texto  h3 {
+    font-size: 2.2rem;
+  }
+
+}
